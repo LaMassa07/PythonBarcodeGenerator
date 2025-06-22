@@ -5,33 +5,6 @@ from qr_matrix_operations import *
 
 MAX_VERSION = 6
 
-qr_code = insert_function_patterns(generate_matrix(2))
-
-size = 20
-griglia_width = 25
-griglia_height = 25
-
-img = Image.new('RGB', (griglia_width * size, griglia_height * size), 'white')
-draw = ImageDraw.Draw(img)
-
-
-def print_qr_code():
-    for y in range(griglia_height):
-        for x in range(griglia_width):
-            color = 'black' if qr_code[y][x] == 1 else 'white'
-            draw.rectangle(
-                [x * size, y * size, (x + 1) * size - 1, (y + 1) * size - 1],
-                fill=color
-            )
-
-    img.show()
-        
-
-
-
-
-
-
 qr_final_data_array = []
 Debug = True
 
