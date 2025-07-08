@@ -163,6 +163,7 @@ def main():
     while len(encoded)%8 != 0:
         encoded.append(0)
     
+    #per dopo
     encoded_data = encoded
 
     patterns = [[1,1,1,0,1,1,0,0], [0,0,0,1,0,0,0,1]]
