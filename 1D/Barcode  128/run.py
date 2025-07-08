@@ -5,7 +5,7 @@ Debug = False
 def draw_barcode(s):
     bar_width = 3
     bar_height = 100
-    quiet_margin = 40  # spazio bianco sopra e sotto
+    quiet_margin = 50  # spazio bianco sopra e sotto
 
     total_height = bar_height + quiet_margin * 2
     total_width = (len(s) + 30) * bar_width
